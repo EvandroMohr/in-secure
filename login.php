@@ -32,7 +32,7 @@
 						</div>
 						<div class="panel-footer text-muted">
 		                   Versão 1.1.0
-		                   <span class="pull-right"><a target="_blank" href="https://github.com/EvandroMohr/rapadura">Saiba mais</a></span>
+		                   <span class="pull-right"><a target="_blank" href="https://github.com/EvandroMohr/in-secure">Saiba mais</a></span>
 		                </div>
 					</div>
   				</div>
