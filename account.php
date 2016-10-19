@@ -14,7 +14,6 @@ $usuario = mysqli_fetch_assoc($query);
 
 
 ?>
-
 <div class="container">
 	<div class="page-title">
 		<h2>

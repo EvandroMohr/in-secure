@@ -12,12 +12,12 @@
 							<form action="autentica.php" class="form-horizontal" method="post">
 			                    <div class="form-group">
 			                        <div class="col-md-12">
-			                            <input type="text" class="form-control" placeholder="Login" name='login'/>
+			                            <input type="text" class="form-control" placeholder="Login" name='login'  required="required"/>
 			                        </div>
 			                    </div>
 			                    <div class="form-group">
 			                        <div class="col-md-12">
-			                            <input type="password" class="form-control" placeholder="Senha" name='senha'/>
+			                            <input type="password" class="form-control" placeholder="Senha" name='senha' required="required"/>
 			                        </div>
 			                    </div>
 			                    <div class="form-group">

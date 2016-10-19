@@ -1,12 +1,10 @@
 <?php
-
 include 'header.php';
 require_once 'connection.php';
 
 
 @$id = $_GET['id'];
-
-if($id != ''){
+if($id != null){
 	$query = mysqli_query($link, "select * from noticia where id = $id");
 	$noticia = mysqli_fetch_assoc($query);
 }
@@ -18,7 +16,6 @@ if($noticia != ''){
 	while($comentario = mysqli_fetch_assoc($query_comentario)){
 		$comentarios[] = $comentario;
 	}
-	
 	
 ?>
 <div class='container'>
