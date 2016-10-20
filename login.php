@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
         <div class="container" style="min-width: 385px !important;">        
         	<div class='row' style='padding-top: 100px;' >
- 				<div class="col-sm-6 col-sm-offset-3 col-md-5 col-md-offset-3 col-lg-4 col-lg-offset-4">
+ 				<div class="col xs-6 col-xs-offset-0 col-sm-6 col-sm-offset-3 col-md-5 col-md-offset-3 col-lg-4 col-lg-offset-4" style="min-width: 385px">
 					<div class="panel panel-warning animated fadeInDown" style="-webkit-animation-duration: 0.5s; animation-duration: 0.5s;">
 						<div class="panel-heading">
 			       			<div class=''>
