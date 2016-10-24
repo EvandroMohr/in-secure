@@ -29,12 +29,7 @@ $usuario = mysqli_fetch_assoc($query);
 				</div>
 				<div class="panel-body">
 					<form action="editar_usuario.php" class="form-horizontal" method="post">
-						<div class="form-group">
-	                        <div class="col-md-6">
-	                        	<label for="id">ID: </label>
-	                            <input id="id" type="text" class="form-control" placeholder="ID" name='id' readonly value="<?=$usuario['id'];?>"/><small>*Essa informação não pode ser editada</small>
-	                        </div>
-	                    </div>
+                        <input id="id" type="hidden" name='id' value="<?=$usuario['id'];?>"/>
 						<div class="form-group">
 	                        <div class="col-md-6">
 	                        	<label for="nome">Nome: </label>
@@ -44,7 +39,8 @@ $usuario = mysqli_fetch_assoc($query);
 	                    <div class="form-group">
 	                        <div class="col-md-6">
 	                        	<label for="login">Login: </label>
-	                            <input id="login" type="text" class="form-control" placeholder="Login" name='login' value="<?=$usuario['login'];?>"/>
+	                            <input id="login" type="text" readonly class="form-control" placeholder="Login" name='login' value="<?=$usuario['login'];?>"/>
+	                       		<small>*Essa informação não pode ser editada</small>
 	                        </div>
 	                    </div>
 	                    <div class="form-group">

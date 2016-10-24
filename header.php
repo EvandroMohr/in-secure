@@ -60,6 +60,12 @@
 				</li>
 				<?php if(isset($_SESSION['login'])){ ?>
 					<li>
+						<a href="users.php">
+							<i class="fa fa-users"></i>
+							Gerir usuários
+						</a>
+					</li>
+					<li>
 						<a href="account.php">
 							<i class="fa fa-edit"></i>
 							Minha conta
