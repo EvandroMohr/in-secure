@@ -1,0 +1,27 @@
+<?
+
+
+
+
+
+
+
+//*** SQL INJECTION *****/
+
+' OR 1='1 
+
+
+//*** defense  ***//
+
+
+$connection = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD));
+
+
+$sql  = " SELECT * FROM usuario where login = :login and senha = :senha";
+$stmt = $connection->prepare($sql);
+$stmt->bindValue(":login", $login, PDO::PARAM_STR);
+$stmt->bindValue(":senha", $senha, PDO::PARAM_STR);
+$stmt->execute();
+$object = $stmt->fetch();
+$connection = null;
+return $object;
