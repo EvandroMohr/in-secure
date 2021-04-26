@@ -8,12 +8,10 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 
 // DADOS DE CONEXÃO COM O BANCO DE DADOS
 // EDITE CONFORME SUA NECESSIDADE
-define('DB_HOST', 'localhost'); 
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'insecure');
-
-
+define('DB_HOST', 'db'); 
+define('DB_USER', getenv('MYSQL_USER'));
+define('DB_PASS', getenv('MYSQL_PASSWORD'));
+define('DB_NAME', getenv('MYSQL_DATABASE'));
 
 
 // Cria a conexão com o banco de dados
