@@ -14,12 +14,13 @@ services:
     links: 
       - db:db
     ports:
-      - '80:80'
+      - 81:80
     volumes:
       - ../app:/var/www/html
 
   db:
     image: mysql:8.0
+    container_name: mysql
     ports: 
         - "3306:3306"
     command: --default-authentication-plugin=mysql_native_password
@@ -29,8 +30,6 @@ services:
         MYSQL_PASSWORD: test
         MYSQL_ROOT_PASSWORD: test  
     volumes:
-        - ./dump:/docker-entrypoint-initdb.d
-        - ./conf:/etc/mysql/conf.d
         - persistent:/var/lib/mysql
 
     networks:
@@ -38,6 +37,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
     links: 
         - db:db
     ports:
@@ -46,5 +46,25 @@ services:
         MYSQL_USER: user
         MYSQL_PASSWORD: test
         MYSQL_ROOT_PASSWORD: test
+
+  webgoat:
+    image: webgoat/webgoat-7.1
+    container_name: webgoat
+    ports:
+      - 8080:8080
+
+  webdvwa:
+    image: vulnerables/web-dvwa
+    container_name: webdvwa
+    ports:
+      - 80:80
+  
+  joiceshop:
+    image: bkimminich/juice-shop
+    container_name: joiceshop
+    ports:
+      - 3000:3000
+     
+
 volumes:
     persistent:
