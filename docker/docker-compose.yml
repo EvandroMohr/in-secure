@@ -59,9 +59,9 @@ services:
     ports:
       - 80:80
   
-  joiceshop:
+  juiceshop:
     image: bkimminich/juice-shop
-    container_name: joiceshop
+    container_name: juiceshop
     ports:
       - 3000:3000
      
