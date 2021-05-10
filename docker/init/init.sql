@@ -95,7 +95,8 @@ CREATE TABLE `usuarios` (
 INSERT INTO `usuarios` (`id`, `nome`, `login`, `senha`) VALUES
 (1, 'Marcão Dono do Site', 'admin', 'senha_dificil'),
 (2, 'Joana Editora de Notícias', 'joana', '112233'),
-(3, 'Augusto sobrinho do chefe', 'augusto', '665544332211');
+(3, 'Augusto sobrinho do chefe', 'augusto', '665544332211'),
+(4, 'Usuário seguro', 'heavy_user', '78790d095756609dea8daee903d2e4e2');
 
 --
 -- Indexes for dumped tables
@@ -137,7 +138,7 @@ ALTER TABLE `noticia`
 -- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
   
   
   
