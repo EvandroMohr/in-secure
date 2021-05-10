@@ -4,9 +4,9 @@
 
 // DADOS DE CONEXÃO COM O BANCO DE DADOS
 // EDITE CONFORME SUA NECESSIDADE
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'db');
 define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_PASS', 'root');
 define('DB_NAME', 'xss');
 
 // Cria a conexão com o banco de dados
