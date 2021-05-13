@@ -81,4 +81,9 @@
 	</div>
     
     </body>
+    
+    <script>
+        window.localStorage.setItem('token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJsb2dpbiI6ImFkbWluIiwic2VuaGEiOiJzZW5oYV9kaWZpY2lsIn0.buK_ddyqwu7Ml1bszCgWxP4MdgNvJKqR-qKNNyQ5SA0');
+
+    </script>
 </html>
