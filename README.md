@@ -1,6 +1,6 @@
 # IN Secure Systems
 
-Ambiente de teste de vunerabilidades em aplicações web. Recomenda-se o uso em treinamentos de segurança.
+Ambiente de teste de vulnerabilidades em aplicações web. Recomenda-se o uso em treinamentos de segurança.
 O ambiente aborda algumas das principais ameaças à segurança de aplicações mencionados no relatório da OWASP.
 
 ## Pré requisitos
